@@ -7,7 +7,7 @@ export const SITE = {
   email: 'sales@desertrich.com',
   locale: 'en_US',
   location: 'United States',
-  googleSiteVerification: '',
+  googleSiteVerification: 'TtgwpMIQahE2h3COiZ70yIsdi2pE-NPP26qM8ymOiSc',
 } as const;
 
 export const CF_IMAGES = {
