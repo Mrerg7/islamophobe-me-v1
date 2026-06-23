@@ -1,0 +1,292 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+import { cfImageUrl, CF_IMAGES } from '../config/site';
+---
+
+<BaseLayout>
+  <Nav />
+  <main>
+    <Hero />
+
+    <!-- Opening Manifesto -->
+    <section id="manifesto" class="relative py-24 sm:py-32 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="relative border-l-4 border-red-700 pl-8">
+          <h2 class="section-header text-white mb-8">
+            The Opening <span class="fire-text">Manifesto</span>
+          </h2>
+          <div class="space-y-6 text-lg text-zinc-300 leading-relaxed">
+            <p>
+              Sharia is not personal piety. It is a complete legal and political system that claims supremacy over man-made law, equality, and individual rights.
+            </p>
+            <p class="text-white font-semibold">
+              It does not assimilate. It dominates.
+            </p>
+            <p>
+              Where Sharia gains ground — whether through courts, councils, cultural pressure, or demographic change — Western protections for children, women, and free speech recede.
+            </p>
+            <p class="text-red-400 font-bold text-xl">
+              You cannot have both. One must prevail.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Child Marriage Line in the Sand -->
+    <section class="relative py-24 sm:py-32 px-6 bg-zinc-900/50">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="section-header text-white mb-12">
+          The Child Marriage <span class="fire-text">Line in the Sand</span>
+        </h2>
+
+        <div class="space-y-8 text-lg text-zinc-300 leading-relaxed">
+          <p>
+            Under classical Sharia there is no minimum age for marriage. The model is the Prophet Muhammad's marriage to Aisha — betrothed at six, consummated at nine according to the most authoritative hadith collections.
+          </p>
+          <p class="text-red-400 font-semibold">
+            This is not fringe. This is sunnah.
+          </p>
+          <p>
+            In countries where Sharia shapes law or culture, child marriage remains widespread:
+          </p>
+
+          <div class="grid sm:grid-cols-3 gap-6 my-10">
+            <div class="bg-zinc-950 border border-red-900/30 rounded-2xl p-6 text-center">
+              <p class="text-4xl font-display text-red-500 mb-2">32%</p>
+              <p class="text-sm text-zinc-400">Yemen: girls married before 18</p>
+            </div>
+            <div class="bg-zinc-950 border border-red-900/30 rounded-2xl p-6 text-center">
+              <p class="text-4xl font-display text-red-500 mb-2">50%+</p>
+              <p class="text-sm text-zinc-400">Afghanistan: marriages involving girls under 15</p>
+            </div>
+            <div class="bg-zinc-950 border border-red-900/30 rounded-2xl p-6 text-center">
+              <p class="text-4xl font-display text-red-500 mb-2">Millions</p>
+              <p class="text-sm text-zinc-400">Child brides across MENA &amp; South Asia</p>
+            </div>
+          </div>
+
+          <p>
+            In the West we are told to treat this as "cultural sensitivity." We are told to look the other way when imams perform underage nikah, when families import child brides, or when grooming networks exploit the clash of values.
+          </p>
+          <p class="text-white font-bold">
+            We refuse.
+          </p>
+          <p class="text-red-400 font-bold text-xl leading-snug">
+            Child marriage under Sharia is the religious sanctioning of what every civilized society calls the rape of children.
+          </p>
+          <p>
+            It will never be accepted here. Not in our laws. Not in our schools. Not in our neighborhoods. Not as "diversity."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image break -->
+    <div class="relative h-64 sm:h-96 overflow-hidden">
+      <div
+        class="absolute inset-0"
+        style="background-image: url('${cfImageUrl(CF_IMAGES.secondaryImageId)}'); background-size: cover; background-position: center;"
+      >
+        <div class="absolute inset-0 bg-zinc-950/60"></div>
+      </div>
+    </div>
+
+    <!-- Sharia's Fundamental Incompatibilities -->
+    <section class="relative py-24 sm:py-32 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="section-header text-white mb-12">
+          Sharia's Fundamental <span class="fire-text">Incompatibilities</span>
+        </h2>
+
+        <div class="space-y-10">
+          <div class="border border-red-900/20 rounded-2xl p-8 bg-zinc-900/50">
+            <h3 class="text-xl font-display text-red-400 mb-3">With the Protection of Children</h3>
+            <p class="text-zinc-300 leading-relaxed">
+              There is no concept of statutory rape when the perpetrator follows the Prophet's example. The "wife" is property. Consent is irrelevant once the guardian agrees.
+            </p>
+          </div>
+
+          <div class="border border-red-900/20 rounded-2xl p-8 bg-zinc-900/50">
+            <h3 class="text-xl font-display text-red-400 mb-3">With Women's Equality</h3>
+            <p class="text-zinc-300 leading-relaxed">
+              A woman inherits half of a man. Her testimony is worth half in many cases. A man may beat a disobedient wife and take up to four wives. Easy divorce for him, near-impossible for her.
+            </p>
+          </div>
+
+          <div class="border border-red-900/20 rounded-2xl p-8 bg-zinc-900/50">
+            <h3 class="text-xl font-display text-red-400 mb-3">With Free Speech and Conscience</h3>
+            <p class="text-zinc-300 leading-relaxed">
+              Death for apostasy. Death for blasphemy. Criticism of Islam is not protected debate — it is a capital offense.
+            </p>
+          </div>
+
+          <div class="border border-red-900/20 rounded-2xl p-8 bg-zinc-900/50">
+            <h3 class="text-xl font-display text-red-400 mb-3">With Equal Protection Under Law</h3>
+            <p class="text-zinc-300 leading-relaxed">
+              Non-Muslims are dhimmis — tolerated at best, taxed and restricted. Homosexuals face execution under traditional hudud. The system is built on hierarchy, not equality.
+            </p>
+          </div>
+
+          <div class="border border-red-900/20 rounded-2xl p-8 bg-zinc-900/50">
+            <h3 class="text-xl font-display text-red-400 mb-3">With the Rule of Law Itself</h3>
+            <p class="text-zinc-300 leading-relaxed">
+              Hudud punishments are not "extremist." They are classical: amputation for theft, stoning for adultery, flogging, crucifixion, beheading. Divine command overrides due process and mercy.
+            </p>
+          </div>
+
+          <p class="text-white font-bold text-xl text-center mt-10">
+            You cannot reconcile these with the Western legal tradition. One system must yield.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Evidence -->
+    <section class="relative py-24 sm:py-32 px-6 bg-zinc-900/50">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="section-header text-white mb-12">
+          The Evidence They Want You to <span class="fire-text">Ignore</span>
+        </h2>
+
+        <div class="space-y-6 text-lg text-zinc-300 leading-relaxed">
+          <p>
+            Pew Research shows overwhelming support in many Muslim-majority countries for making Sharia the official law of the land — 99% in Afghanistan, 84% in Pakistan, high 70s percent across much of the Middle East, North Africa, and South Asia.
+          </p>
+          <p>
+            Even in the West, significant minorities of Muslims support aspects of Sharia, including hudud penalties and the eventual implementation of Islamic law.
+          </p>
+          <p>
+            Europe is the live experiment: grooming gang scandals on an industrial scale, parallel Sharia councils, no-go areas, collapsing social trust, and political correctness that protected predators for years.
+          </p>
+          <p class="text-red-400 font-bold">
+            America is not immune. The same denial is at work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Islamophobe? -->
+    <section class="relative py-24 sm:py-32 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="section-header text-white mb-12">
+          Why <span class="islamophobe-gradient">"Islamophobe"?</span>
+        </h2>
+
+        <div class="space-y-6 text-lg text-zinc-300 leading-relaxed">
+          <p>
+            They call you Islamophobic for noticing.
+          </p>
+          <p>
+            For refusing to pretend that marrying off nine-year-old girls is beautiful cultural enrichment.
+          </p>
+          <p>
+            For saying that a 7th-century desert warrior's marital habits should not dictate policy for 21st-century children.
+          </p>
+          <p class="text-red-400 font-bold text-xl leading-snug">
+            Islamophobia, properly understood, is the rational response to an ideology that sacralizes the exploitation of the weak and demands the subjugation of everyone else.
+          </p>
+          <p>
+            We are not afraid of individual Muslims practicing personal faith in peace.
+          </p>
+          <p class="text-white font-semibold">
+            We are Islamophobic about Sharia — because we have seen what it does to little girls, to women, to apostates, and to every society that accommodates it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="relative py-24 sm:py-32 px-6 bg-zinc-900/50">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="section-header text-white mb-12">
+          Our <span class="fire-text">Mission</span>
+        </h2>
+
+        <div class="space-y-6 text-lg text-zinc-300 leading-relaxed max-w-3xl mx-auto">
+          <p class="text-xl text-white font-semibold">
+            islamophobe.me exists to state the obvious without apology or euphemism:
+          </p>
+          <p class="text-xl text-red-400 font-bold">
+            Sharia law will never be compatible with Western values.
+          </p>
+          <p class="text-xl text-red-400 font-bold">
+            Child marriage will never be accepted.
+          </p>
+
+          <div class="space-y-4 mt-8 text-left max-w-2xl mx-auto">
+            <p class="flex items-start gap-x-3">
+              <span class="text-red-500 mt-1"><i class="fa-solid fa-xmark"></i></span>
+              <span>We will not outsource our moral judgment to political correctness.</span>
+            </p>
+            <p class="flex items-start gap-x-3">
+              <span class="text-red-500 mt-1"><i class="fa-solid fa-xmark"></i></span>
+              <span>We will not sacrifice our children on the altar of multiculturalism.</span>
+            </p>
+            <p class="flex items-start gap-x-3">
+              <span class="text-red-500 mt-1"><i class="fa-solid fa-xmark"></i></span>
+              <span>We will not pretend that importing a supremacist legal system is compatible with liberty.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Take Action -->
+    <section id="take-action" class="relative py-24 sm:py-32 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="section-header text-white mb-12">
+          Take <span class="fire-text">Action</span>
+        </h2>
+
+        <div class="grid sm:grid-cols-2 gap-8 mb-12">
+          <div class="border border-red-900/20 rounded-2xl p-8 bg-zinc-900/50">
+            <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-bullhorn"></i></div>
+            <h3 class="text-xl font-display text-white mb-3">Speak Plainly</h3>
+            <p class="text-zinc-400 leading-relaxed">
+              The social and professional pressure to stay silent is real. Break it.
+            </p>
+          </div>
+
+          <div class="border border-red-900/20 rounded-2xl p-8 bg-zinc-900/50">
+            <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-scale-balanced"></i></div>
+            <h3 class="text-xl font-display text-white mb-3">Support Legislation</h3>
+            <p class="text-zinc-400 leading-relaxed">
+              Support explicit legislation that rejects Sharia accommodations in family law, bans the recognition of underage religious marriages performed abroad, and prioritizes Western child-protection standards over cultural claims.
+            </p>
+          </div>
+
+          <div class="border border-red-900/20 rounded-2xl p-8 bg-zinc-900/50">
+            <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-shield-haltered"></i></div>
+            <h3 class="text-xl font-display text-white mb-3">Protect the Vulnerable</h3>
+            <p class="text-zinc-400 leading-relaxed">
+              Report abuse. Support those escaping Sharia — especially ex-Muslims and women fleeing forced or underage marriage.
+            </p>
+          </div>
+
+          <div class="border border-red-900/20 rounded-2xl p-8 bg-zinc-900/50">
+            <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-share-nodes"></i></div>
+            <h3 class="text-xl font-display text-white mb-3">Share This Site</h3>
+            <p class="text-zinc-400 leading-relaxed">
+              Facts do not require permission. Share this page with everyone who needs to see it.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <p class="text-2xl text-white font-display mb-2">
+            Sharia does not assimilate. It dominates.
+          </p>
+          <p class="text-xl text-red-400 font-bold">
+            The only question is whether we still have the will to say no.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</BaseLayout>
